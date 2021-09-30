@@ -49,7 +49,10 @@ namespace DIO.Series
 			Console.Write("Digite o id da série: ");
 			int indiceSerie = int.Parse(Console.ReadLine());
 
-			repositorio.Exclui(indiceSerie);
+			Console.Write("Tem certeza que deseja excluir? Sim(S) ou Não(N)");
+			string excluir = Console.ReadLine();
+
+			if(excluir == "S") repositorio.Exclui(indiceSerie);
 		}
 
 		private static void VisualizarSerie()

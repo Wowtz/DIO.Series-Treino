@@ -15,6 +15,7 @@ namespace DIO.Series.Classes
         public void Exclui(int id)
         {
             listaSerie[id].Excluir();
+            Console.WriteLine($"Série {listaSerie[id].retornaTitulo()} excluída com sucesso.");
         }
 
         public void Insere(Serie entidade)
